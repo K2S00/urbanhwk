@@ -81,11 +81,15 @@ background-postion: changes photo postion */
 .float-left {
     float: left;
     margin-right: 25px;
+    height: fit-content; 
+    width: fit-content; 
 }
 /* This moves the photo in the SEO section of the body*/
 .float-right {
     float: right;
     margin-left: 25px;
+    height: fit-content;
+    width: fit-content;
 }
 /* this effects the location of all right side elements the SEO, ORM and SMM */
 section {
@@ -127,6 +131,8 @@ section {
 /*changes photo in the SMM section*/
 section img {
     max-height: 200px;
+    height: fit-content;
+    width: fit-content;
 }
 
 /* changes SEO, ORM,SMM title size and spacing between title and paragraph in SEO section*/
