@@ -1,0 +1,176 @@
+/* I forget what this does and i need to rewatch the 3rd lecture */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* background color of the entire wedsite */
+body {
+    background-color: #d9dcd6
+}
+/* header padding; space around company name and nav links: font-family; font style: 
+background color; color of header: Color; changes the color of 2 parts of the company name Hori and the n  */
+header {
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+}
+
+/* display; moves navigational tools: font-size; change size of company name in header */
+header h1 {
+    display: inline-block;
+    font-size: 48px;}
+
+/* changes color of seo in company  */
+header h1 .seo {
+    color: #d9dcd6;
+}
+/* padding top; Moves nav tools lower: 
+margin-right; Moves nav tools left: 
+float; changes location of nav tools
+font-family; font style of nav tool ... I THINK THERE IS A PROBLEM HERE CHANGING THIS FIXES MY PROBLEM WITH 
+THE LOCATION OF THE NAV TOOLS IN THE HEADER
+font-size; size of nav tools font*/
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    }
+   
+
+/* Im not seeing what changes when I change this.  on the HTML page header div ul has the nav tools in it */
+header nav ul {
+    list-style: none;
+}
+/*display: changes location of nav tools 
+margin-left: changes the location of the list smaller number makes it move up and line up across the page 
+larger number makes it line up underneath eachother */
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+/* color: changes color of nav tools but giving color we override the defalt blue link text
+text-decoration: by typing none we prevent the underline for the link*/
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+/*font-size: changes of the text sizes of all the text in the paragraphs in the body*/
+p {
+    font-size: 16px;
+}
+/* this is the photo of people working at the table.
+Height: changes height of hero photo
+Width:  changes width of hero photo
+margin-bottom: puts space between photo and body of website 
+background-image: link to hero photo
+background-size: zooms in and out of photo (i think)
+background-postion: changes photo postion */
+.hero {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/digital-marketing-meeting.jpg");
+    background-size: cover;
+    background-position: center;
+}
+/* this moves the photos in SEO and SMM sections of the body  */
+.float-left {
+    float: left;
+    margin-right: 25px;
+    height: fit-content; 
+    width: fit-content; 
+}
+/* This moves the photo in the SEO section of the body*/
+.float-right {
+    float: right;
+    margin-left: 25px;
+    height: fit-content;
+    width: fit-content;
+}
+/* this effects the location of all right side elements the SEO, ORM and SMM */
+section {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+    
+}
+
+/*changes the SEO box*/
+.search-engine-optimization{
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+/* Changes the ORM box*/
+.online-reputation-management {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+/*Changes the SMM box*/
+.social-media-marketing {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+/*changes photo in the SEO section*/ 
+/*changes photo in the ORM section*/ 
+/*changes photo in the SMM section*/
+section img {
+    max-height: 200px;
+    height: fit-content;
+    width: fit-content;
+}
+
+/* changes SEO, ORM,SMM title size and spacing between title and paragraph in SEO section*/
+section h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/* this effects the benfits box. CANT FIGURE OUT WHAT CLEAR IS DOING: NOTHING IS CHANGING WHEN I 
+CHANGE THE HEIGHT PERCENTAGE  */
+aside {
+    margin-right: 20px;
+    padding: 20px;
+    clear: none;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2589bd;
+    
+}
+aside h3 {
+    margin-bottom: 32px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-align: center;
+}
+aside img{  display: block;
+    margin: 10px auto;
+    max-width: 150px;}
+/*styles footer section*/
+footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+/* changes font size in footer */
+footer h2 {
+    font-size: 20px;
+}
